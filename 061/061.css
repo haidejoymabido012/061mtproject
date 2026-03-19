@@ -1,0 +1,463 @@
+/* ================================
+   CSS ZEN GARDEN BASE DESIGN
+   'Sky' by Stefan Petre
+================================ */
+
+body {
+  font:
+    10px Arial,
+    Helvetica,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-position: center;
+  background-repeat: repeat-y;
+
+  /* glass design background enhancement */
+  background: radial-gradient(circle at 30% 30%, #7f8c9a, #2a3a44) fixed !important;
+}
+
+a:link {
+  color: #00f;
+}
+a:visited {
+  color: #99f;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+abbr {
+  border-bottom: 1px dotted #eee;
+  cursor: help;
+}
+
+.page-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background-image: url("./right_fill.jpg");
+  background-repeat: repeat-y;
+  clear: both;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================================
+   HEADER / INTRO
+================================ */
+
+.intro {
+  width: 800px;
+  height: 330px;
+  margin-right: 50px;
+  overflow: hidden;
+  background-image: url("./BG.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  text-align: right;
+  color: #fff;
+  clear: both;
+}
+header {
+  width: 700px;
+  height: 36px;
+  overflow: hidden;
+  background-image: url("./header_title.jpg");
+  margin-left: 40px;
+}
+
+header h1,
+header h2 {
+  display: none;
+}
+
+/* ================================
+   SUMMARY SECTION - KEEP EXISTING STYLES
+================================ */
+
+.summary {
+  float: right;
+  width: 300px;
+  margin: 0 40px 0 0;
+  overflow: visible;
+  height: 50px;
+}
+
+/* GLASS STYLE for summary paragraphs */
+.summary p {
+  margin: 10px 0 !important;
+
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow:
+    0 20px 35px -8px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+  padding: 1.6rem 2rem;
+
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+
+  margin-right: 10px;
+}
+
+.summary a {
+  color: white !important;
+  font-weight: 700;
+  text-decoration: underline rgba(255, 255, 240, 0.7);
+}
+
+/* ================================
+   PREAMBLE SECTION - UNIFIED GLASS CONTAINER
+================================ */
+
+.preamble {
+  float: left;
+  width: 600px;
+  margin: 70px 40px;
+  text-align: left;
+  height: 110px;
+}
+
+/* Create a unified glass container for the entire preamble block */
+.preamble {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow:
+    0 20px 35px -8px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+  padding: 1.8rem 2rem;
+  margin-bottom: 2rem;
+
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Style the heading inside the glass container */
+.preamble h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Style paragraphs inside the glass container */
+.preamble p {
+  color: #feffff;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+  margin: 0.5rem;
+  line-height: 1.2;
+}
+
+/* Remove individual backgrounds from h3 and p since they're now in the container */
+.preamble h3,
+.preamble p {
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Style links inside the glass container */
+.preamble a {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: underline wavy rgba(255, 255, 240, 0.7);
+}
+
+/* Style abbreviations inside the glass container */
+.preamble abbr {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  cursor: help;
+  text-decoration: none;
+}
+
+/* ================================
+   SUPPORTING CONTENT - PRECISE POSITIONING
+================================ */
+
+.supporting {
+  width: 440px;
+  text-align: left;
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+  clear: right;
+  position: relative;
+  z-index: 5;
+}
+
+/* Style for each section as a white card */
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background: white;
+  border-radius: 16px;
+  box-shadow:
+    0 15px 30px -8px rgba(0, 0, 0, 0.4),
+    0 8px 15px -5px rgba(0, 0, 0, 0.3);
+  padding: 8px 25px 18px 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  width: auto;
+}
+
+/* Headings inside white cards */
+.supporting h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin: 18px 0 12px 0;
+  font-weight: 600;
+  border-bottom: 2px solid #9b7bb5;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* First heading in each card has less top margin */
+.explanation h3:first-child,
+.participation h3:first-child,
+.benefits h3:first-child,
+.requirements h3:first-child {
+  margin-top: 12px;
+}
+
+/* Paragraphs inside white cards */
+.supporting p {
+  color: #2c3e50;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 14px 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+/* Last paragraph in each card has less bottom margin */
+.supporting p:last-child {
+  margin-bottom: 8px;
+}
+
+/* Style links */
+.supporting a {
+  color: #6b4e9e;
+  text-decoration: none;
+  border-bottom: 1px dotted #b39ddb;
+  font-weight: 500;
+}
+
+.supporting a:hover {
+  color: #4a2e7a;
+  border-bottom: 1px solid #7e57c2;
+}
+
+/* Style abbreviations */
+.supporting abbr {
+  border-bottom: 1px dotted #b39ddb;
+  cursor: help;
+  text-decoration: none;
+}
+
+/* Remove background images */
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  background-image: none;
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+  width: auto;
+  height: auto;
+}
+
+/* Sidebar - fixed positioning to prevent overlap */
+.sidebar {
+  float: left;
+  width: 250px;
+  margin-left: auto;
+  background: rgba(10, 25, 40, 0.7);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 160, 255, 0.25);
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* Page wrapper to contain everything */
+.page-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  /* background: transparent; */
+  position: rela;
+  z-index: 1;
+  display: flow-root; /* Modern clearfix */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 1020px) {
+  .page-wrapper {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .supporting {
+    width: 55%;
+    margin-right: 15px;
+  }
+
+  .sidebar {
+    width: 35%;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .supporting,
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+/* ================================
+   SIDEBAR
+================================ */
+
+/* ================================
+   SIDEBAR - EXTENDED WITH MIN-HEIGHT
+================================ */
+
+.sidebar {
+  background-image: url(./right_fill.jpg);
+  width: 250px;
+  text-align: left;
+  background-position: left;
+  background-repeat: repeat-y;
+  min-height: 2400px; /* Significantly increased to cover all content */
+  height: auto;
+  padding-bottom: 50px; /* Extra padding at bottom */
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 50px; /* Extra margin at bottom */
+  position: relative;
+  z-index: 10;
+  color: #ffffff;
+}
+
+/* Add a gradient fade at the bottom for smooth transition */
+.sidebar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(10, 25, 40, 0.8));
+  pointer-events: none; /* Allows clicks to pass through */
+  z-index: 1;
+}
+
+.sidebar .wrapper h3 {
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+  color: #f8f5f7;
+  font-size: 16px;
+  margin: 20px 0 10px 20px;
+  border-bottom: 1px solid #b12dd9;
+  padding-bottom: 5px;
+  height: auto;
+}
+
+.sidebar .wrapper ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.sidebar .wrapper li {
+  margin: 4px;
+}
+
+.design-archives h3,
+.design-archives h3,
+.zen-resources h3 {
+  background-image: none;
+  margin: 20px 0 10 20px;
+  height: auto;
+  color: #fffcfc;
+  font-size: 16px;
+  border-bottom: 5px;
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+.design-selection a,
+.sidebar .wrapper a {
+  display: block;
+  color: #ffd;
+  font-size: 13px;
+}
+
+.sidebar .wrapper a.designer-name {
+  display: inline;
+  font-size: 11px;
+  color: #ddd;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+/* ================================
+   RESPONSIVE ADJUSTMENT
+================================ */
+
+@media (max-width: 640px) {
+  .preamble {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .summary p {
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+  }
+}
